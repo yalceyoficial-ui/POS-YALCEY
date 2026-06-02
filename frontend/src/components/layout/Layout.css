@@ -1,0 +1,161 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #F8FAFC;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1E293B;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+  border-bottom: 1px solid #334155;
+}
+
+.sidebar-logo-icon {
+  width: 34px;
+  height: 34px;
+  background: #10B981;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.sidebar-logo-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+
+.sidebar-logo-sub {
+  font-size: 10px;
+  color: #64748B;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 12px 0;
+  overflow-y: auto;
+}
+
+.sidebar-section {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #475569;
+  padding: 8px 16px 4px;
+  margin-top: 4px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 16px;
+  background: none;
+  border: none;
+  border-left: 3px solid transparent;
+  color: #94A3B8;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s;
+}
+
+.sidebar-item:hover {
+  background: #334155;
+  color: #E2E8F0;
+}
+
+.sidebar-item.active {
+  background: #334155;
+  color: #fff;
+  border-left-color: #10B981;
+}
+
+.sidebar-icon {
+  font-size: 15px;
+}
+
+.sidebar-footer {
+  padding: 14px 16px;
+  border-top: 1px solid #334155;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.sidebar-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #10B981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+}
+
+.sidebar-user-info { flex: 1; overflow: hidden; }
+
+.sidebar-user-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #E2E8F0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-user-role {
+  font-size: 10px;
+  color: #64748B;
+}
+
+.sidebar-logout {
+  width: 100%;
+  padding: 7px;
+  background: #334155;
+  border: none;
+  border-radius: 6px;
+  color: #94A3B8;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.sidebar-logout:hover {
+  background: #EF4444;
+  color: white;
+}
+
+.main-content {
+  margin-left: 220px;
+  flex: 1;
+  min-height: 100vh;
+}

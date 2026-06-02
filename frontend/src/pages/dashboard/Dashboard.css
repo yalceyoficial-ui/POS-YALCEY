@@ -1,0 +1,156 @@
+.dashboard {
+  padding: 24px;
+  background: #F8FAFC;
+  min-height: 100vh;
+}
+
+.dash-header {
+  margin-bottom: 24px;
+}
+
+.dash-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0 0 4px;
+}
+
+.dash-subtitle {
+  font-size: 13px;
+  color: #64748B;
+  margin: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-sub {
+  font-size: 12px;
+  color: #94A3B8;
+}
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.dash-card {
+  background: #fff;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+
+.dash-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.dash-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0F172A;
+  margin: 0;
+}
+
+.dash-card-count {
+  font-size: 12px;
+  color: #64748B;
+}
+
+.dash-empty {
+  font-size: 13px;
+  color: #10B981;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.dash-loading {
+  padding: 40px;
+  text-align: center;
+  color: #64748B;
+}
+
+.critical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.critical-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #F8FAFC;
+}
+
+.critical-item:last-child {
+  border-bottom: none;
+}
+
+.critical-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0F172A;
+}
+
+.critical-sku {
+  font-size: 11px;
+  color: #94A3B8;
+  font-family: monospace;
+}
+
+.critical-stock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.critical-min {
+  font-size: 10px;
+  color: #94A3B8;
+}
+
+.stock-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.stock-ok { background: #D1FAE5; color: #065F46; }
+.stock-low { background: #FEF3C7; color: #92400E; }
+.stock-empty { background: #FEE2E2; color: #991B1B; }
